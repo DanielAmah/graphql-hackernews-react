@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import {
   Button,
   Form,
@@ -19,6 +18,11 @@ class Register extends Component {
       disabled: false
     };
     this.handleRegister = this.handleRegister.bind(this);
+  }
+
+  showLogin = () => {
+    const {history} = this.props
+    history.push('/login');
   }
 
   async handleRegister(e) {
@@ -115,7 +119,7 @@ class Register extends Component {
             </Form>
             <Message>
               {/* eslint-disable-next-line */}
-              Already registered? <Link to="/login">Login</Link>
+              Already registered? <span onClick={this.showLogin}>Login</span>
             </Message>
           </Grid.Column>
         </Grid>

@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../App.css";
+
+
 
 const NotFound = () => (
   <div className="bg-green">
@@ -13,9 +14,9 @@ const NotFound = () => (
             alt=""
             width="300px"
           />
-          <Link to="/login" className="btn-go-home">
+          <a href="/login" className="btn-go-home">
             GO BACK HOME
-          </Link>
+          </a>
         </div>
         <div className="objects">
           <img

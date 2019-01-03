@@ -7,7 +7,7 @@ import {
   Message,
   Segment
 } from "semantic-ui-react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { toastr } from "react-redux-toastr";
 import { axiosInstance } from "../helpers/authentication";
 
@@ -20,6 +20,11 @@ class Login extends Component {
       disabled: false
     };
     this.handleLogin = this.handleLogin.bind(this);
+  }
+
+  showRegister = () => {
+    const {history} = this.props
+    history.push('/register');
   }
 
   async handleLogin(e) {
@@ -121,7 +126,7 @@ class Login extends Component {
             </Form>
             <Message>
               {/* eslint-disable-next-line */}
-              New to us? <Link to="/register">Register</Link>
+              New to us? <span onClick={this.showRegister}>Register</span>
             </Message>
           </Grid.Column>
         </Grid>
