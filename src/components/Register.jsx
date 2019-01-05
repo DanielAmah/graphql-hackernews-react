@@ -94,6 +94,7 @@ class Register extends Component {
                 <Form.Input
                   fluid
                   icon="user"
+                  id="reg-email"
                   iconPosition="left"
                   placeholder="E-mail address"
                   onChange={e => this.setState({ email: e.target.value })}
@@ -101,6 +102,7 @@ class Register extends Component {
                 <Form.Input
                   fluid
                   icon="lock"
+                  id="reg-pass"
                   iconPosition="left"
                   placeholder="Password"
                   type="password"

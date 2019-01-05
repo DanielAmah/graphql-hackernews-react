@@ -166,6 +166,7 @@ class HomepageHeading extends React.Component {
             <Modal
               trigger={
                 <Button
+                  id="handle-open"
                   className="ui right floated teal button"
                   onClick={this.handleOpen}
                 >
@@ -182,12 +183,14 @@ class HomepageHeading extends React.Component {
                 <Form size="large">
                   <Segment>
                     <Form.Input
+                      id="url"
                       label="Url"
                       placeholder="Url e.g http://www.google.com"
                       onChange={e => this.setState({ url: e.target.value })}
                     />
                     <Form.Field
                       control={TextArea}
+                      id="description"
                       label="Description"
                       placeholder="A short description about the link.."
                       onChange={e =>
@@ -215,10 +218,10 @@ class HomepageHeading extends React.Component {
           <List divided relaxed>
             {urlItems}
           </List>
-          <button type="button" onClick={this.handlePageClickPrev}>
+          <button type="button" id="handle-prev" onClick={this.handlePageClickPrev}>
             Prev
           </button>
-          <button type="button" onClick={this.handlePageClickNext}>
+          <button type="button" id="handle-next" onClick={this.handlePageClickNext}>
             Next
           </button>
         </Container>

@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DesktopContainer component it matches the snapshot 1`] = `
+<div>
+  <div>
+    <div
+      className="ui vertical center aligned segment"
+      style={
+        Object {
+          "minHeight": 700,
+          "padding": "1em 0em",
+        }
+      }
+    >
+      <div
+        className="ui large pointing secondary menu"
+      >
+        <div
+          className="ui container"
+        >
+          <a
+            className="active item"
+            onClick={[Function]}
+          >
+            Home
+          </a>
+          <div
+            className="right item"
+            onClick={[Function]}
+          >
+            <span>
+              <a
+                className="ui button"
+                onClick={[Function]}
+                role="button"
+              >
+                Log in
+              </a>
+              <a
+                className="ui button"
+                onClick={[Function]}
+                role="button"
+                style={
+                  Object {
+                    "marginLeft": "0.5em",
+                  }
+                }
+              >
+                Sign Up
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="ui container"
+        >
+          <div
+            className="ui clearing segment create-link-container"
+          >
+            <button
+              className="ui button ui right floated teal button"
+              id="handle-open"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              Add Link
+            </button>
+          </div>
+          <div
+            className="ui active centered inline loader"
+          />
+          <div
+            className="ui divided relaxed list"
+            role="list"
+          />
+          <button
+            id="handle-prev"
+            onClick={[Function]}
+            type="button"
+          >
+            Prev
+          </button>
+          <button
+            id="handle-next"
+            onClick={[Function]}
+            type="button"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
