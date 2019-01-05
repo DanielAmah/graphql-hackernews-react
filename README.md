@@ -1,3 +1,4 @@
+[![Coverage Status](https://coveralls.io/repos/github/DanielAmah/graphql-hackernews-react/badge.svg?branch=master)](https://coveralls.io/github/DanielAmah/graphql-hackernews-react?branch=master)[![Build Status](https://www.travis-ci.org/DanielAmah/graphql-hackernews-react.svg?branch=master)](https://www.travis-ci.org/DanielAmah/graphql-hackernews-react)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
