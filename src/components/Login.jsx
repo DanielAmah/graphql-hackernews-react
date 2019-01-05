@@ -27,12 +27,11 @@ class Login extends Component {
     history.push('/register');
   }
 
-  async handleLogin(e) {
+  async handleLogin() {
     const { email, password } = this.state;
     this.setState({
       disabled: true
     });
-    e.preventDefault();
     const LoginQuery = `mutation{
       signinUser(
         email: {
@@ -100,6 +99,7 @@ class Login extends Component {
                 <Form.Input
                   fluid
                   icon="user"
+                  id="email"
                   iconPosition="left"
                   placeholder="E-mail address"
                   onChange={e => this.setState({ email: e.target.value })}
@@ -107,6 +107,7 @@ class Login extends Component {
                 <Form.Input
                   fluid
                   icon="lock"
+                  id="password"
                   iconPosition="left"
                   placeholder="Password"
                   type="password"
